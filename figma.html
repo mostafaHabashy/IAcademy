@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ابحث عن منزل أحلامك</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- أيقونات Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- CSS المخصص -->
+     <link rel="stylesheet" href="./figma.css"> 
+</head>
+
+<body>
+    <!-- شريط التنقل -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top shadow-sm">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#">
+                <i class="fas fa-home me-2 text-primary"></i>عقاري
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">الرئيسية</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">العقارات</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">وكلاء</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">اتصل بنا</a>
+                    </li>
+                </ul>
+                <div class="d-flex">
+                    <a href="./../day 2/form.html" class="btn btn-primary" style="margin-left: 5px;">تسجيل دخول</a>
+                    <a href="./../day 2/form.html" class="btn btn-primary">تسجيل</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- قسم الهيرو -->
+    <header class="hero-section py-5">
+        <div class="container py-5">
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <h1 class="display-4 fw-bold mb-4">ابحث عن <span class="text-primary">منزل أحلامك</span></h1>
+                    <p class="lead mb-4">المنصة الأفضل للعثور على العقار المثالي الذي يناسب احتياجاتك وميزانيتك.</p>
+                    <a href="#" class="btn btn-primary btn-lg px-4">تصفح العقارات</a>
+                </div>
+                <div class="col-lg-6">
+                    <img src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80"
+                        alt="منزل أحلامك" class="img-fluid rounded shadow">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- قسم البحث -->
+    <section class="search-section py-4 bg-light">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <div class="card shadow border-0">
+                        <div class="card-body p-4">
+                            <form class="row g-3">
+                                <div class="col-md-4">
+                                    <label for="location" class="form-label">الموقع</label>
+                                    <select class="form-select" id="location">
+                                        <option selected>اختر المدينة...</option>
+                                        <option>الشروق</option>
+                                        <option>بدر</option>
+                                        <option>عبور</option>
+                                    </select>
+                                </div>
+                                <div class="col-md-3">
+                                    <label for="type" class="form-label">نوع العقار</label>
+                                    <select class="form-select" id="type">
+                                        <option selected>أي نوع</option>
+                                        <option>شقة</option>
+                                        <option>فيلا</option>
+                                        <option>منزل</option>
+                                    </select>
+                                </div>
+                                <div class="col-md-3">
+                                    <label for="price" class="form-label">السعر</label>
+                                    <select class="form-select" id="price">
+                                        <option selected>أي سعر</option>
+                                        <option>حتى 500,000 جنية</option>
+                                        <option>500,000 - 1,000,000 جنية</option>
+                                        <option>أكثر من 1,000,000 جنية</option>
+                                    </select>
+                                </div>
+                                <div class="col-md-2 d-flex align-items-end">
+                                    <button type="submit" class="btn btn-primary w-100">بحث</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- قسم العقارات المميزة -->
+    <section class="featured-properties py-5">
+        <div class="container">
+            <div class="d-flex justify-content-between align-items-center mb-5">
+                <h2 class="fw-bold">عقارات مميزة</h2>
+                <a href="#" class="btn btn-primary">عرض الكل</a>
+            </div>
+            <div class="row">
+                <!-- عقار 1 -->
+                <div class="col-md-4 mb-4">
+                    <div class="card border-0 shadow-sm h-100">
+                        <div class="position-relative">
+                            <img src="https://images.unsplash.com/photo-1580587771525-78b9dba3b914?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80"
+                                class="card-img-top" alt="عقار">
+                            <span class="badge bg-warning position-absolute top-0 start-0 m-3">مميز</span>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">فيلا فاخرة بالشروق</h5>
+                            <p class="card-text text-muted">
+                                <i class="fas fa-map-marker-alt text-primary me-2"></i>العائلي ,الشروق
+                            </p>
+                            <div class="features mb-3">
+                                <span class="me-3"><i class="fas fa-bed text-primary me-1"></i> 6 غرف</span>
+                                <span class="me-3"><i class="fas fa-bath text-primary me-1"></i> حمامين</span>
+                                <span><i class="fas fa-ruler-combined text-primary me-1"></i> 600 م²</span>
+                            </div>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <h5 class="text-primary mb-0">1,250,000 جنيه</h5>
+                                <a href="#" class="btn btn-primary">تفاصيل</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card border-0 shadow-sm h-100">
+                        <div class="position-relative">
+                            <img src="download (2).jfif" class="card-img-top" alt="عقار">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">شقة ببدر</h5>
+                            <p class="card-text text-muted">
+                                <i class="fas fa-map-marker-alt text-primary me-2"></i> اسكان بدر
+                            </p>
+                            <div class="features mb-3">
+                                <span class="me-3"><i class="fas fa-bed text-primary me-1"></i> 3 غرف</span>
+                                <span class="me-3"><i class="fas fa-bath text-primary me-1"></i> حمام</span>
+                                <span><i class="fas fa-ruler-combined text-primary me-1"></i> 100 م²</span>
+                            </div>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <h5 class="text-primary mb-0">950,000 جنيه</h5>
+                                <a href="#"class="btn btn-primary">تفاصيل</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card border-0 shadow-sm h-100">
+                        <div class="position-relative">
+                            <img src="./download.jfif" class="card-img-top" alt="عقار">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">  منزل بالعبور</h5>
+                            <p class="card-text text-muted">
+                                <i class="fas fa-map-marker-alt text-primary me-2"></i> الشباب
+                            </p>
+                            <div class="features mb-3">
+                                <span class="me-3"><i class="fas fa-bed text-primary me-1"></i> 4 غرف</span>
+                                <span class="me-3"><i class="fas fa-bath text-primary me-1"></i> 3 خمامات</span>
+                                <span><i class="fas fa-ruler-combined text-primary me-1"></i> 350 م²</span>
+                            </div>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <h5 class="text-primary mb-0">2,650,000 جنيه</h5>
+                                <a href="#"class="btn btn-primary">تفاصيل</a>
+                            </div>
+                        </div>
+    </section>
+
+    <!-- قسم الخدمات -->
+    <section class="services py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center fw-bold mb-5">لماذا تختارنا؟</h2>
+            <div class="row text-center">
+                <div class="col-md-4 mb-4">
+                    <div class="p-4 bg-white rounded shadow-sm">
+                        <i class="fas fa-home fa-3x text-primary mb-3"></i>
+                        <h4>أفضل العقارات</h4>
+                        <p class="text-muted">نقدم لك مجموعة مختارة من أفضل العقارات في المنطقة</p>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="p-4 bg-white rounded shadow-sm">
+                        <i class="fas fa-hand-holding-usd fa-3x text-primary mb-3"></i>
+                        <h4>أسعار تنافسية</h4>
+                        <p class="text-muted">أسعارنا تنافسية ومناسبة لجميع الميزانيات</p>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="p-4 bg-white rounded shadow-sm">
+                        <i class="fas fa-headset fa-3x text-primary mb-3"></i>
+                        <h4>دعم فني 24/7</h4>
+                        <p class="text-muted">فريق دعم فني متاح على مدار الساعة لمساعدتك</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- تعليقات -->
+    <section class="coment">
+        <div class="row" style="display: flex; justify-content: center; gap: 20px; flex-wrap: nowrap;">
+            <!-- الكارت الأول -->
+            <div class="col-md-4 mb-4" style="flex: 1; max-width: 30%;">
+                <div class="card border-0 shadow-sm h-100">
+                    <div class="position-relative">
+                        <img src="./Group 15 (1).png" class="card-img-top" alt="عقار">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">مصطفى حبشي</h5>
+                        <div class="location">الشروق </div>
+                        <div class="rating">★ 5.0</div>
+                        <div class="review-text">
+                            جعلتني عقاري أحقق حلمي بامتلاك منزل! قدم فريقهم دعمًا استثنائيًا ورافقني في كل خطوة من
+                            العملية. لا يمكنني أن أكون أكثر سعادة بمنزلي الجديد!
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- الكارت الثاني -->
+            <div class="col-md-4 mb-4" style="flex: 1; max-width: 30%;">
+                <div class="card border-0 shadow-sm h-100">
+                    <div class="position-relative">
+                        <img src="./Group 15 (2).png" class="card-img-top" alt="عقار">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title"> احمد عماد</h5>
+                        <div class="location"> العبور</div>
+                        <div class="rating">★ 3.0</div>
+                        <div class="review-text">
+                            كان المنزل غالي جدا وكان غير مرتب للزوار 
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- الكارت الثالث -->
+            <div class="col-md-4 mb-4" style="flex: 1; max-width: 30%;">
+                <div class="card border-0 shadow-sm h-100">
+                    <div class="position-relative">
+                        <img src="./Group 15 (3).png" class="card-img-top" alt="عقار">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">أحمد محمد</h5>
+                        <div class="location">بدر</div>
+                        <div class="rating">★ 4.8</div>
+                        <div class="review-text">
+                            كانت شقة عادية لا مذهلا ولاه سيئه
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- شكاوي -->
+     <section style="display: flex; justify-content: center; align-items: center;">
+        <div class="col-lg-3 col-md-4 mb-4">
+            <h1 class="fw-bold mb-3">لو لديكم اي اسئلة تواصلوا معنا  </h1>
+            <p>اشترك ليصلك كل جديد عن العقارات والعروض.</p>
+            <form class="mt-3">
+                <div class="input-group">
+                    <input type="email" class="form-control" placeholder="بريدك الإلكتروني">
+                    <button class="btn btn-primary" type="submit">اشترك</button>
+                </div>
+            </form>
+        </div>
+    </div>
+     </section>
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-4">
+                    <h5 class="fw-bold mb-3">
+                        <i class="fas fa-home me-2 text-primary"></i>عقاري
+                    </h5>
+                    <p>منصة رائدة في مجال العقارات تساعدك في العثور على المنزل المثالي.</p>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/mostafa.habashy.3158" class="text-white me-2"><i
+                                class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-white me-2"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-white me-2"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 mb-4">
+                    <h5 class="fw-bold mb-3">روابط سريعة</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="#" class="text-white">الرئيسية</a></li>
+                        <li class="mb-2"><a href="#" class="text-white">العقارات</a></li>
+                        <li class="mb-2"><a href="#" class="text-white">وكلاء</a></li>
+                        <li><a href="#" class="text-white">اتصل بنا</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-4 mb-4">
+                    <h5 class="fw-bold mb-3">تواصل معنا</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><i class="fas fa-map-marker-alt text-primary me-2"></i> القاهرة,مصر</li>
+                        <li class="mb-2"><i class="fas fa-phone text-primary me-2"></i> 01211868680</li>
+                        <li><i class="fas fa-envelope text-primary me-2"></i> mostafa.habashy.00@gmail.com</li>
+                    </ul>
+                </div>
+            <hr class="my-4">
+            <div class="row">
+                <div class="col-md-6 text-center text-md-start">
+                    <p class="mb-0">© 2025 عقاري. جميع الحقوق محفوظة.</p>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <a href="#" class="text-white me-3">شروط الخدمة</a>
+                    <a href="#" class="text-white">سياسة الخصوصية</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

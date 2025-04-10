@@ -1,0 +1,96 @@
+
+:root {
+    --primary-color: #DDC7BB;
+    --secondary-color: #f8f9fa;
+}
+
+body {
+    font-family: 'Tajawal', sans-serif;
+}
+
+.hero-section {
+    background-color: var(--secondary-color);
+}
+
+.navbar {
+    padding: 15px 0;
+}
+.rating {
+    color: #FFD700;
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.review-text {
+    font-size: 14px;
+    line-height: 1.5;
+    color: #333;
+}
+.navbar-brand {
+    font-size: 1.5rem;
+}
+
+.card {
+    transition: all 0.3s ease;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.badge {
+    font-size: 0.8rem;
+    padding: 5px 10px;
+}
+
+.btn-primary {
+    background-color: #DDC7BB;
+    border-color: #DDC7BB;
+}
+
+.btn-primary:hover {
+    background-color: #f06b23;
+    border-color: #f06b23;
+}
+
+.text-primary {
+    color: var(--primary-color) !important;
+}
+
+.search-section {
+    margin-top: -50px;
+}
+
+.features i {
+    margin-right: 5px;
+}
+
+.social-icons a {
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    transition: all 0.3s;
+}
+
+.social-icons a:hover {
+    background-color: var(--primary-color);
+    transform: translateY(-3px);
+}
+
+/* RTL adjustments */
+[dir="rtl"] .me-2 {
+    margin-left: 0.5rem !important;
+    margin-right: 0 !important;
+}
+
+[dir="rtl"] .ms-2 {
+    margin-right: 0.5rem !important;
+    margin-left: 0 !important;
+}
